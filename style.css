@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    
 }
 
 #logo{
@@ -30,7 +32,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    transition: width 0.3s;
+    opacity: 0.4;
 }
 
 #navbar ul li{
@@ -49,4 +51,51 @@
 #navbar ul li a:hover{
     color: black;
     background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+#home::before{
+    content: " ";
+    position: absolute;
+    background: url('./img/spaghetti-1932466_1920.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 1.rem;
+    font-family: "Playfair Display", serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Playfair Display", serif;
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(182, 33, 28);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 15px;
 }
